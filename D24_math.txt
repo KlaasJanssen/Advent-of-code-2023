@@ -1,0 +1,26 @@
+x = x_start1 + x_vel1 * t1
+y = y_start1 + y_vel1 * t1
+
+(x - x_start) / x_vel1 = t1
+
+y = y_start1 + y_vel1 * (x - x_start) / x_vel1
+y = y_start1 - y_vel1*x_start/x_vel1 + y_vel1/x_vel1 * x
+y = ax + b
+
+a = y_vel1 / x_vel1
+b = y_start1 - (y_vel1 * x_start1 / x_vel1)
+
+a1x + b1 = a2x + b2
+x(a1 - a2) = b2 - b1
+x = (b2 - b1) / (a1 - a2)
+
+
+
+30 -> 22
+a = -2 # z dir hail
+b = 2 # z dir rock
+
+y1 + y_vel1 * t + dir[1] * dt = y2 + y_vel2 * (t + dt)
+y1 + y_vel1 * t + dir[1] * dt = y2 + y_vel2 * t + y_vel2 * dt
+t(y_vel1 - y_vel2) = y2 + y_vel2 * dt - y1 - dir[1] * dt
+t = (y2 + y_vel2 * dt - y1 - dir[1] * dt) / (y_vel1 - y_vel2)

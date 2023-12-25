@@ -98,9 +98,6 @@ for x in range(1,n + 1):
         else:
             state1 += 4*x - 4
 
-#state2 += 2 + (n-1)*3
-#state3 += 2 + (n - 1)
-#state4 += n
 total1 = x1 * (n - 1) * 3 + 74 * (n-1) + x1_diamond * (n-1) - 65 * (n-1) * 4
 total2 = state1 * x2 + state2 * x1
 total3 = x2_diamond * n
@@ -111,14 +108,3 @@ print(total2)
 print(total3)
 print(total4)
 print(total1 + total2 + total3 + total4)
-
-
-
-#print(state2 * x1)
-#print(state1 * x2 + state2 * x1 + state3 * x1_diamond + state4 * x2_diamond)
-
-
-#print(x1, x2, x2_diamond)
-
-# print(2*n + 1)
-# print((26501365 - 65) // 131)
